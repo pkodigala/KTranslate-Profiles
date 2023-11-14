@@ -1,0 +1,28 @@
+  - trap_oid: 1.3.6.1.4.1.76543.2.55
+    trap_name: pureCriticalTrap
+    drop_undefined: false
+    events:
+      # Product Name
+      - name: ProductName
+        OID: 1.3.6.1.4.1.76543.3.1
+      # Product Version
+      - name: ProductVersion
+        OID: 1.3.6.1.4.1.76543.3.2
+      # Hostname
+      - name: Host
+        OID: 1.3.6.1.4.1.76543.3.3
+      # Alert Code
+      - name: AlertCode
+        OID: 1.3.6.1.4.1.76543.3.4
+      # Alert Subject
+      - name: AlertSubject
+        OID: 1.3.6.1.4.1.76543.3.5
+      # Alert Body or Extra Information
+      - name: AlertBody
+        OID: 1.3.6.1.4.1.76543.3.6
+      # If alert is a reminder, true(1) or false(2)
+      - name: AlertReminder
+        OID: 1.3.6.1.4.1.76543.3.7
+        enum:
+          true: 1
+          false: 2
